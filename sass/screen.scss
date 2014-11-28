@@ -1,0 +1,165 @@
+@import "compass/reset";
+@import "normalize";
+@import "susy";
+@import "grids";
+@import "typography";
+
+
+
+// SUSY setup
+//$container-style: fluid;
+// $COLORS
+$hover: red;
+$secondary: #737373;
+
+body {
+  background-color: #f1f1f1;
+  color: #222222;
+}
+ #mask {
+   position:fixed;
+   top:0;
+   left:0;
+   width:100%;
+   height: 100%;
+   z-index: 10;
+ }
+ #mask img {
+   width: 100%;
+   height: 100%;
+
+ }
+
+//HEADER
+#header {
+  @include container(90em);
+  margin-left: gutter(8);
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+#hname{
+  @include span(3 of 12);
+  color: $secondary;
+
+}
+
+#htitle{
+  @include span(5 of 12);
+
+
+
+}
+
+
+// CHAPETERS
+
+.cointainer {
+  @include container(90em);
+  margin-left: gutter(12);
+  margin-right: gutter(12) ;
+
+#chapter00 {
+  background-color: #fff1b7;
+}
+.chapter {
+  padding-top: 2em;
+  @include span(12 of 12);
+
+
+}
+
+
+
+}
+
+.chaptertitle {
+
+  margin-left: gutter(2);
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  //font-weight: bold;
+  //background-color: red;
+}
+
+.chaptertitle p {
+
+}
+
+.subchapterimg {
+  @include span(3 of 12);
+
+}
+
+.subchapterimg img {
+  width: 100%;
+}
+
+.subchapter {
+  //font-family: 'times new roman';
+  @include span(5 of 12);
+  //margin-left: span(2 of 12) + gutter(8);
+  //margin-bottom: 2em;
+  //background-color: red;
+  border-right: solid;
+  border-width: 2px;
+  padding-right: 1em;
+}
+
+.subchapter p {
+  margin-bottom: 1.5em;
+}
+
+//main text
+
+.subchapter sup {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #555555;
+  //background-color: blue;
+  vertical-align: sup;
+
+}
+
+.subchapter a {
+  text-decoration: none;
+
+}
+
+.subchapter sup:hover {
+  color: $hover;
+
+}
+
+// Notes
+
+.textnotes {
+  color: $secondary;
+  font-size: 0.7em;
+  @include span(2 of 12);
+
+  //background-color: yellowgreen;
+
+
+}
+
+.textnotes p {
+  margin-bottom: 1em;
+}
+
+.notenumber {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #444444;
+}
+
+.textnotes a {
+  text-decoration: none;
+  color: #444444;
+}
+
+.textnotes a:hover {
+  color: $hover;
+}
+
+
