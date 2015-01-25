@@ -2,12 +2,31 @@
 // ============
 
 
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
 
+
+
+
+
+@font-face {
+  font-family: SuisseReg;
+  src: url(../fonts/SuisseIntl-Regular-WebXL.eot) format("eot"),
+       url(../fonts/SuisseIntl-Regular-WebXL.woff)format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: SuisseWorks;
+  src: url(../fonts/SuisseWorks-Regular-WebXL.eot) format("eot"),
+  url(../fonts/SuisseWorks-Regular-WebXL.woff) format("woff");
+
+}
 body {
   font-size: 18px;
-  line-height: 1.5;
-  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.6;
+  font-family:"SuisseReg";
+  font-weight: normal;
+
 
 }
 
@@ -23,8 +42,12 @@ em {
   font-style: italic;
 
 }
+i {
+  font-style: italic;
 
+}
 h1 {
   font-size: 1.2em;
   margin: 0;
+  font-family:"SuisseWorks";
 }
